@@ -1,0 +1,155 @@
+/* Layout Containers */
+#output {
+  padding: 20px;
+  font-family: monospace;
+  background-color: #f9f9f9;
+}
+
+.level-info {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.compact-stats {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.equipment-block,
+.consumables-block {
+  margin-bottom: 10px;
+}
+
+.consumable-button {
+  margin-right: 5px;
+  padding: 5px 10px;
+}
+/* header */
+.game-header {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.game-header h1 {
+  margin: 0;
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+
+.game-header p {
+  margin: 0;
+  font-style: italic;
+  color: #555;
+}
+
+/* Dungeon Floor */
+.floor-section {
+  margin-top: 20px;
+}
+
+.floor-table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  margin-top: 5px;
+  width: 40%;
+}
+
+.room-face-down {
+  font-family: monospace;
+  max-width: 200px; /* Or however wide you want */
+}
+
+.room-face-up {
+  font-family: monospace;
+  max-width: 200px; /* Or however wide you want */
+}
+
+.room-name {
+  padding-right: 15px;
+  max-width: 200px; /* Or however wide you want */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: monospace;
+}
+
+.room-stat {
+  text-align: left; /* or center if preferred */
+  width: 80px;
+  font-family: monospace;
+  padding-left: 10px;
+}
+
+/* Room Selection */
+.room-selection {
+  margin-top: 20px;
+}
+
+.room-card {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+  display: inline-block;
+  cursor: pointer;
+  font-family: monospace;
+  background-color: #fff;
+}
+
+/* Looting */
+.loot-section {
+  margin-top: 20px;
+}
+
+.loot-card {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #fefefe;
+}
+
+/* Buttons */
+.action-buttons {
+  margin-top: 15px;
+}
+
+.explore-button,
+.venture-button,
+.new-game-button {
+  margin-right: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.new-game-button {
+  margin-top: 40px;
+}
+
+.explore-button:disabled,
+.venture-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Log */
+.log-container {
+  border-top: 1px solid black;
+  margin-top: 10px;
+  padding-top: 5px;
+  font-family: monospace;
+}
+
+.log-entry {
+  transition: opacity 0.3s;
+  font-style: italic;
+}
+
+.log-entry-top {
+  color: darkblue;
+  font-weight: bold;
+}
+
+.faded-log {
+  color: red;
+}

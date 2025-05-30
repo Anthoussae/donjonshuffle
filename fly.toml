@@ -1,7 +1,4 @@
 # fly.toml app configuration file generated for dungeon on 2025-05-30T11:30:32+08:00
-#
-# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
-#
 
 app = 'dungeon'
 primary_region = 'den'
@@ -9,12 +6,20 @@ primary_region = 'den'
 [build]
 
 [http_service]
-  internal_port = 3000
+  internal_port = 8080
   force_https = true
-  auto_stop_machines = 'stop'
+  auto_stop_machines = "stop"
   auto_start_machines = true
   min_machines_running = 0
-  processes = ['app']
+  processes = ["app"]
+
+  [[http_service.ports]]
+    handlers = ["http"]
+    port = 80
+
+  [[http_service.ports]]
+    handlers = ["tls", "http"]
+    port = 443
 
 [[vm]]
   memory = '1gb'

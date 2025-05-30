@@ -3,11 +3,7 @@
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-<<<<<<< HEAD
-app = 'donjonshuffle'
-=======
 app = 'dungeon'
->>>>>>> 362ffce (added fly deployment configurations)
 primary_region = 'den'
 
 [build]
@@ -24,7 +20,3 @@ primary_region = 'den'
   memory = '1gb'
   cpu_kind = 'shared'
   cpus = 1
-<<<<<<< HEAD
-  memory_mb = 1024
-=======
->>>>>>> 362ffce (added fly deployment configurations)
